@@ -1,0 +1,473 @@
+
+
+/* LANDING PAGE CSS */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgb(234, 249, 208);
+}
+/* Header CSS */
+.header{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    padding: 20px 100px;
+    background-color: rgb(203, 203, 235);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(31, 31, 31, 0.523);
+    box-shadow: 1px 1px 10px 1px black;
+}
+
+
+/* logo design */
+.logo{
+    height: 140px;
+    width: 150px;
+    margin-top: 8px;
+    cursor: default;
+    position: relative;
+}
+
+/* menu */
+.navbar{
+    display: flex;
+}
+
+/* options */
+.navbar a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: .3s;
+    text-transform: uppercase;
+}
+
+.navbar a:hover{
+    color: rgb(0, 0, 0);
+}
+
+/* For hamburger */
+#check{
+    display: none;
+}
+.open-menu, .close-menu{
+    position: absolute;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    display: none;
+}
+
+.open-menu{
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+}
+.close-menu{
+    top: 25px;
+    right: 30px;
+}
+
+
+/* Rensposive for all devices*/
+@media(max-width: 800px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 55%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #d97474;
+        transition: all .4s ease-in-out;
+        letter-spacing: .5px;
+    }
+
+    .close-menu{
+        top: 40px;
+    }
+
+    .navbar a{
+        margin-bottom: 40px;
+    }
+
+    /* Hamburger */
+    .open-menu, .close-menu{
+        display: block;
+    }
+    #check:checked ~ .navbar{
+        right: 0;
+    }
+
+    /* fixed h1 tag size for all devices */
+    .india h1{
+        font-size: 50px;
+    }
+}
+
+/* fixed logo position */
+@media(max-width:700px){
+    .logo{
+        position: relative;
+        right: 120px;
+        margin-left: 40px;
+        height: 100px;
+        width: 100px;
+    }
+    .close-menu{
+        top: 25px;
+    }
+}
+
+
+
+
+        /* PARALLAX SCROLLING
+        Asia section */
+
+h1{
+    font-size: 120px;
+    text-align: center;
+    color: rgba(255, 255, 255, .4);
+}
+.asia-india{
+    cursor: default;
+}
+
+.ind, .india, .pakistan, .bangladesh,.afghanistan,.srilanka,.nepal{
+    padding: 10% 0;
+}
+
+.ind{
+    padding-top: 10vh;
+    background: url('https://wallpapercave.com/wp/wp3400419.png') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 80vh;
+}
+
+h2{
+    font-size: 32px;
+    color: #555;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 20px 0 10px;
+}
+
+/* class name of list item */
+.top{
+    list-style-type: circle;
+    margin: 10px 10px 10px 50px;
+}
+.top li{
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* Pakistan */
+.pakistan{
+    padding-top: 10vh;
+    background: url('https://img.freepik.com/premium-vector/flat-illustration-pakistan-national-flag_1118204-74.jpg') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 80vh;
+}
+/* Srilanka */
+.srilanka{
+    padding-top: 10vh;
+    background: url('https://wallpapercave.com/wp/wp4215011.jpg') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 80vh;
+}
+
+/* Bangladesh */
+.bangladesh{
+    padding-top: 10vh;
+    background: url('https://koryogroup.com/uploads/blog/864/original-bangladesh_flag_.png?1580988851') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 80vh;
+}
+
+/* Afghanistan */
+.afghanistan{
+    padding-top: 10vh;
+    background: url('https://images.alphacoders.com/578/578008.jpg') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 80vh;
+}
+
+/* nepal */
+.nepal{
+    padding-top: 10vh;
+    background: url('https://i.pinimg.com/originals/0b/71/5d/0b715d346bda6305d3a511102cb5f23b.png') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 80vh;
+}
+
+
+/* Africa*/
+
+.south-africa, .zimbabwe, .west-indies{
+    padding: 10% 0;
+}
+
+/* SOUTH AFRICA */
+.south-africa{
+    padding-top: 10vh;
+    background: url('https://openclipart.org/image/2400px/svg_to_png/13204/Anonymous-Flag-of-South-Africa.png') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 80vh;
+}
+
+/* ZIMBABWE */
+.zimbabwe{
+    padding-top: 10vh;
+    background: url('https://pixelz.cc/wp-content/uploads/2018/11/zimbabwe-flag-uhd-4k-wallpaper.jpg') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 80vh;
+}
+
+/* WEST-INDIES */
+.west-indies{
+    padding-top: 10vh;
+    background: url('https://static.vecteezy.com/system/resources/previews/024/289/394/original/illustration-of-west-indies-flag-design-vector.jpg') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 80vh;
+}
+
+
+/* EUROPE section */
+
+.england, .ireland{
+    padding: 10% 0;
+}
+
+
+/* England */
+.england{
+    padding-top: 10vh;
+    background: url('https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/1200px-Flag_of_England.svg.png') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 80vh;
+}
+
+/* Ireland */
+.ireland{
+    padding-top: 10vh;
+    background: url('https://th.bing.com/th/id/OIP.4CqFrTEhTaNQCdAAERWevQHaE8?rs=1&pid=ImgDetMain') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 80vh;
+}
+.ireland h1{
+    -webkit-text-stroke: 1px black;
+}
+
+
+
+
+/* AUstralia */
+
+.australia1, .newzealand{
+    padding: 10% 0;
+}
+
+
+/* AUSTRALIA FIRST */
+.australia1{
+    padding-top: 10vh;
+    background: url('https://a1craftandquilting.com.au/cdn/shop/products/6146b_flag_b284f763-91bd-42a2-85d9-fb90dc969fc3_2048x.jpg?v=1500975994') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 80vh;
+}
+
+/* NEWZEALAND */
+.newzealand{
+    padding-top: 10vh;
+    background: url('https://s3.eu-central-1.amazonaws.com/centaur-wp/designweek/prod/content/uploads/2015/08/iStock_000052338624_Large-1002x601.jpg') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 80vh;
+}
+
+
+
+
+
+/* Top 40 */
+.fourty{
+    display: flex;
+}
+
+#top-40 h2{
+    text-align: left;
+    margin: 20px;
+}
+#top-40 ul li{
+    list-style: none;
+    margin: 20px;
+}
+.fourty li a{
+    color: rgb(238, 5, 5);
+    font-size: 18px;
+    transition: 0.5s;
+}
+.fourty li a:hover{
+    color: black;
+}
+
+/* Responsive top 40 links for all devices */
+@media(max-width: 800px){
+    .fourty{
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+}
+
+
+
+
+/* Footer SEction */
+
+footer p{
+    margin-top: 20px;
+    color: white;
+    opacity: 0.5;
+}
+
+footer .container{
+    background-color: rgb(36, 78, 67);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+
+.footer-col ul{
+    list-style: none;
+    padding: 10px 0;
+}
+
+.footer-col ul li{
+    margin-bottom: 30px;
+}
+
+.footer-col ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.footer-col ul li a:hover{
+    opacity: 1;
+}
+
+.footer-col h4{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 25px;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    background-color: #e91e64;
+    bottom: -10px;
+}
+
+.footer-col input , button, .message{
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+}
+
+button{
+    padding: 0px 20px;
+    background-color: rgb(247, 63, 94);
+    color: white;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+button:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+.col p{
+    color: white;
+}
+
+
+.row .social-icons i{
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    margin: 0 15px;
+    transition: 0.5s;
+}
+
+.row .social-icons i:hover{
+    transform: translateY(-10px);
+}
+
+.container hr{
+    opacity: 0.7;
+}
+
+/* Responsive footer for all devices */
+@media(max-width: 800px){
+    footer .row{
+        flex-direction: column;
+        padding: 20px 30px;    
+    }
+    footer .footer-col ul{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-col input{
+        width: 100%;
+    }
+    .social-icons{
+        margin-top: 10px;
+    }
+
+}

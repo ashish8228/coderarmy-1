@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  height: 100%;
+  background: url('https://wallpapercave.com/wp/wp3978064.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animation */
+.profile{
+  opacity: 0;
+  transform: translatex(50px);
+  animation: reveal 1s ease-out forwards;
+}
+
+@keyframes reveal {
+  to {
+      opacity: 1;
+      transform: translatex(0);
+  }
+}
+
+.profile{
+  color: white;
+    margin-top: 10vh;
+    height: 80vh;
+    width: 80vw;
+    padding: 30px 50px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.051);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: poppins, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 185%;
+}
+
+ul li{
+  letter-spacing: 1px;
+}
+
+
+
+/* Responsive */
+@media(max-width: 600px){
+  .profile{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: scroll;
+      margin-left: 5vh;
+  }
+
+  ul{
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+  }
+  ul li{
+    font-size: smaller;
+    letter-spacing: 1px;
+  }
+}

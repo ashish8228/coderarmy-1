@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgb(234, 249, 208);
+}
+
+
+/* Header  */
+header{
+    padding-top: 20px;
+    text-align: center;
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(255, 181, 218);
+    background-size: cover;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+/* Main */
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    padding: 0 5vw 0 5vw;
+
+}
+
+.common{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.player{
+    border: solid rgb(234, 249, 208);
+    transition: 0.5s;
+    padding: 10px;
+}
+.player:hover{
+    transform: translateY(-10px);
+    background-color: white;
+    border-radius: 20px;
+}
+.img{
+    height: 25vh;
+    width: 20vw;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.player h3{
+    text-align: center;
+}
+
+
+/* Responsive for all devies */
+@media(max-width: 600px){
+    .common{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .player{
+        margin-bottom: 20px;
+    }
+    .img{
+        height: 50vh;
+        width: 100%;
+        flex-direction: column;
+    }
+    header h1{
+        font-size: 14px;
+    }
+}
+
+
+/* Revealing animation on right */
+.container{
+    opacity: 0;
+    transform: translatex(50px);
+    animation: reveal 1s ease-out forwards;
+}
+
+@keyframes reveal {
+    to {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}

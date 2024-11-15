@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  height: 100%;
+  background: url('https://th.bing.com/th/id/R.6f6d6954c8350a0e5a06303c7dc4e34f?rik=UJGnZgHcE%2bz9PQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f-Wskcl0-wopE%2fTZa95BiYKtI%2fAAAAAAAAAb8%2f0niC8N-gQnc%2fs640%2fsachin-tendulkar-62d.jpg&ehk=Gyz5rP7mYYCisRW7HOVSa82QOtkT8RKWi%2b06Xv9nlpM%3d&risl=&pid=ImgRaw&r=0') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile{
+    opacity: 0;
+    transform: translatex(50px);
+    animation: reveal 1s ease-out forwards;
+}
+
+@keyframes reveal {
+    to {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+.profile{
+    transition: 0.5s;
+    color: white;
+    margin-top: 10vh;
+    height: 80vh;
+    width: 80vw;
+    padding: 30px 50px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.051);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: poppins, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 185%;
+}
+
+ul li{
+  letter-spacing: 1px;
+}
+
+
+
+/* Responsive */
+@media(max-width: 600px){
+  .profile{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: scroll;
+      margin-left: 5vh;
+  }
+
+  ul{
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+  }
+  ul li{
+    font-size: smaller;
+    letter-spacing: 1px;
+  }
+}

@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://th.bing.com/th/id/OIP.NHx8jUs1eFkevHie2eoNGAHaE8?rs=1&pid=ImgDetMain') no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+/* Header of the quiz */
+header {
+    background-color: #8ca3d1;
+    color: white;
+    padding: 20px;
+    box-shadow: 1px 1px 5px black;
+}
+
+main {
+    padding: 20px;
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff28;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    letter-spacing: 1px;
+    transform: translatex(100px);
+    animation: reveal 1s ease-out forwards;
+}
+
+@keyframes reveal {
+    to {
+        opacity: 1;
+        transform: translatex(0);
+    }
+  }
+
+.question {
+    margin-bottom: 20px;
+}
+
+.options label {
+    display: block;
+    margin: 10px 0;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
